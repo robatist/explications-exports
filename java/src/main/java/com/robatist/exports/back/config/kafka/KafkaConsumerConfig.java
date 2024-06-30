@@ -1,4 +1,4 @@
-package com.robatist.backend.config.kafka;
+package com.robatist.exports.back.config.kafka;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.springframework.beans.factory.annotation.Value;

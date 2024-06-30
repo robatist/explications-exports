@@ -1,4 +1,4 @@
-package com.robatist.backend.kafka;
+package com.robatist.exports.back.kafka;
 
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;

@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.robatist.backend</groupId>
-        <artifactId>kafkaConsumer</artifactId>
+        <groupId>com.robatist.exports.back</groupId>
+        <artifactId>exports.back</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>java</artifactId>
+    <artifactId>exports.back.java</artifactId>
     <name>${project.artifactId}</name>
 
     <properties>
@@ -21,25 +21,37 @@
     </properties>
 
     <dependencies>
+        <!-- SPRING BOOT -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring-boot.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka-test</artifactId>
+            <version>${spring-boot.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- COMMON -->
+        <!--<dependency>
+            <groupId>com.robatist.common.back</groupId>
+            <artifactId>common.back</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>-->
     </dependencies>
 
     <build>
@@ -47,8 +59,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.robatist.backend.BackendApplication</mainClass>
+                    <mainClass>com.robatist.exports.back.KafkaConsumerApplication</mainClass>
                     <layout>JAR</layout>
                     <excludes>
                         <exclude>
