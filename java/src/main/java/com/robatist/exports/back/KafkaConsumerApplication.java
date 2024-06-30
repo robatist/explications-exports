@@ -1,4 +1,4 @@
-package com.robatist.backend;
+package com.robatist.exports.back;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
